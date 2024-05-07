@@ -1,3 +1,6 @@
+header #logo {
+  margin-right: 25px;
+}
 header #logo:hover {
   color: var(--gray);
 }
