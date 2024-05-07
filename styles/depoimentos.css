@@ -1,0 +1,91 @@
+#depoimentos {
+  padding: 30px 0;
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+}
+#depoimentos h3 {
+  font-size: 2em;
+  font-weight: 300;
+}
+#depoimentos h4 {
+  font-family: Authentic, sans-serif;
+  font-size: 3em;
+  font-weight: 200;
+  color: var(--light-gray);
+}
+#depoimentos .user-img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border: 2px solid var(--brown);
+}
+#depoimentos .user-img img {
+  width: 70px;
+  height: auto;
+}
+#depoimentos-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.depoimento {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  color: var(--black);
+  width: 30%;
+}
+.depoimento .user-info {
+  display: flex;
+  justify-content: space-between;
+}
+.depoimento .comment {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.depoimento .comment div:last-child {
+  display: flex;
+  align-items: flex-start;
+  transform: rotate(180deg);
+}
+.depoimento .comment img {
+  height: 20px;
+}
+.depoimento .stars {
+  color: var(--yellow);
+}
+.depoiment .comment span {
+  height: 5px;
+}
+.depoimento .comment span:first-child {
+  position: absolute;
+  bottom: 0;
+}
+.depoimento .comment div:last-child span {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#depoimentos #depoimentos-paginacao {
+  margin-top: 50px;
+}
+#depoimentos .pag-btn {
+  width: 15px;
+  height: 15px;
+  background-color: var(--white);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: width 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+#depoimentos .pag-btn:not(:last-child) {
+  margin-right: 10px;
+}
+#depoimentos .pag-btn.active {
+  border-radius: 5px;
+  width: 40px;
+}

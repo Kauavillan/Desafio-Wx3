@@ -1,0 +1,120 @@
+#footer-links {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 20px;
+}
+#footer-links div {
+  text-align: left;
+  width: 100%;
+}
+#footer-links li {
+  list-style: none;
+}
+
+#footer-links,
+#footer-links a {
+  color: var(--gray);
+}
+
+#footer-links h5 {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+#footer-links li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+#footer-links a:hover {
+  text-decoration: underline;
+}
+#footer-links > div div {
+  margin-top: 15px;
+}
+#footer-links li:not(:last-child) {
+  margin-bottom: 5px;
+}
+#footer-links img {
+  max-width: 180px;
+  height: auto;
+}
+#footer-links > div:last-child div {
+  display: flex;
+  justify-content: space-between;
+}
+#footer-links #ssl {
+  width: 80px;
+  height: 40px;
+}
+
+#final .container div:first-of-type {
+  display: flex;
+  margin-top: 10px;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.9em;
+  color: var(--gray);
+}
+#final .container div:first-of-type img {
+  margin-top: 10px;
+}
+#final .container div:first-of-type p {
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#final .container div:last-of-type {
+  display: flex;
+  justify-content: center;
+}
+#final .container div:last-of-type p {
+  margin-top: 10px;
+  width: 60%;
+  font-size: 0.7em;
+}
+#final .container hr {
+  border: none;
+  height: 2px;
+  background-color: var(--gray);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+@media screen and (max-width: 890px) {
+  #footer-links {
+    flex-direction: column;
+  }
+  #footer-links li a {
+    font-size: 1em;
+  }
+  #footer-links li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  #footer-links div {
+    text-align: center;
+  }
+  #footer-links > div:not(:first-child) {
+    margin-top: 30px;
+  }
+  #final .container div:first-of-type {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #final .container div:first-of-type p {
+    margin-top: 10px;
+    position: static;
+    width: 100%;
+    text-align: center;
+    transform: translateX(0);
+  }
+  #final .container div:last-of-type p {
+    width: 100%;
+  }
+}

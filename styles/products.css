@@ -1,0 +1,210 @@
+@keyframes growingBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+.container h3 {
+  font-weight: 400;
+  font-size: 2em;
+}
+.container .ver-todos {
+  text-decoration: none;
+  position: relative;
+  font-weight: 400;
+  font-size: 1.8em;
+  color: var(--black);
+}
+
+.container .paginacao {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+.container .paginacao button {
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid var(--gray);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.container .paginacao i {
+  color: var(--gray);
+  cursor: pointer;
+  font-size: 1.7em;
+  transform: translateY(-4px);
+}
+.container .paginacao i:first-child {
+  margin-right: 10px;
+  transform: translateY(-4px);
+}
+
+.container .paginacao button.active {
+  background-color: var(--gray);
+}
+.container .paginacao button:not(:last-child) {
+  margin-right: 10px;
+}
+.container .ver-todos:hover::before {
+  content: "";
+  position: absolute;
+  animation: growingBar 0.2s ease-in-out forwards;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: var(--gray);
+}
+.container .list-products {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  margin: 50px 0 30px 0;
+}
+.prod * {
+  text-decoration: none;
+  color: var(--black);
+}
+.container .list-products .prod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 310px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.prod a {
+  width: inherit;
+  height: inherit;
+}
+.img-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-container .overlay {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 13px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.overlay > div {
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  background-color: var(--gray);
+}
+.overlay > div div {
+  width: 50%;
+  transition: transform 0.2s ease-in-out;
+}
+.overlay > div div:first-child:hover {
+  color: var(--salmon);
+  i {
+    color: var(--salmon);
+  }
+}
+.overlay > div div:last-child:hover {
+  transform: scale(1.07);
+}
+
+.overlay > div div:first-child {
+  border-right: 3px solid var(--light-gray);
+}
+.overlay div,
+.overlay i {
+  color: var(--white);
+}
+.img-container .tag {
+  position: absolute;
+  font-size: 0.8em;
+  font-weight: 600;
+  top: 0;
+  left: 0;
+  background-color: var(--gray);
+  color: var(--white);
+  margin: 10px 0 0 10px;
+  padding: 3px;
+  border-radius: 2px;
+}
+.container .list-products .prod img {
+  width: auto;
+  height: 490px;
+}
+.list-products .prod:not(:first-child) {
+  margin-left: 25px;
+}
+.prod .stars {
+  margin: 10px 0;
+}
+.prod .stars i {
+  color: var(--yellow);
+}
+.prod h5 {
+  font-size: 15px;
+  font-weight: 300;
+  width: 310px;
+  text-wrap: wrap;
+}
+.prod .preco {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+}
+.prod .preco span:first-child {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.prod .preco span:not(:last-child) {
+  color: var(--salmon);
+}
+.prod .preco span:last-child {
+  font-weight: 600;
+}
+.prod button {
+  opacity: 0;
+  background-color: var(--gray);
+  border: none;
+  color: var(--white);
+  letter-spacing: 3px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1em;
+  width: 80%;
+  height: 40px;
+  transition: color 0.3s ease-in-out;
+}
+.prod button:hover {
+  color: var(--salmon);
+}
+.prod .overlay,
+.prod button {
+  transition: opacity 0.3s ease-in-out;
+}
+.prod:hover button,
+.prod:hover .overlay {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1400px) {
+  .container .paginacao {
+    justify-content: center;
+  }
+}

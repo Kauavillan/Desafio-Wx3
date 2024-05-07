@@ -1,0 +1,76 @@
+#conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 77vh;
+}
+#conteudo #img-container {
+  display: flex;
+  justify-content: flex-start;
+}
+#conteudo #img-container img {
+  max-width: 80%;
+}
+#conteudo #info-produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#conteudo h1 {
+  color: var(--gray);
+  width: 100%;
+  font-size: 2em;
+}
+#conteudo .stars {
+  margin-top: 20px;
+  color: var(--yellow);
+  font-size: 1.3em;
+}
+#conteudo h2 {
+  margin-top: 30px;
+  font-size: 3em;
+  color: var(--salmon);
+  font-weight: 700;
+}
+#conteudo button {
+  margin-top: 25px;
+  font-size: 1.4em;
+  font-weight: 600;
+  padding: 10px;
+  color: var(--white);
+  background-color: var(--salmon);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+#conteudo button:hover {
+  background-color: var(--dark-salmon);
+}
+
+@media screen and (max-width: 850px) {
+  #conteudo {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #conteudo #img-container img {
+    max-width: 100%;
+  }
+  #conteudo #info-produto {
+    margin-top: 5vh;
+    width: 100%;
+  }
+  #conteudo h1 {
+    font-size: 1.8em;
+  }
+  #conteudo .stars {
+    font-size: 1em;
+  }
+  #conteudo h2 {
+    font-size: 2em;
+  }
+  #conteudo button {
+    font-size: 1.2em;
+  }
+}

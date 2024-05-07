@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "nome": "Vestido Transpassado Boho Black",
+    "preco": 95.25,
+    "nota": 4,
+    "imagem": "/images/produto1.jpg"
+  },
+  {
+    "id": 2,
+    "nome": "Blusa Dandelion Plant",
+    "preco": 63.87,
+    "nota": 5,
+    "imagem": "/images/produto2.jpg"
+  },
+  {
+    "id": 3,
+    "nome": "Saia Mullet Midi Verde Musgo",
+    "preco": 108.89,
+    "nota": 3,
+    "imagem": "/images/produto3.jpg"
+  },
+  {
+    "id": 4,
+    "nome": "Macaquinho Casual Gola V",
+    "preco": 89.9,
+    "nota": 5,
+    "imagem": "/images/produto4.jpg"
+  },
+  {
+    "id": 5,
+    "nome": "Blusa Tela Manga E Costa Gola V",
+    "preco": 32.21,
+    "nota": 4,
+    "imagem": "/images/produto5.jpg"
+  },
+  {
+    "id": 6,
+    "nome": "Macaquinho Estampado Casual Gola V",
+    "preco": 107.9,
+    "nota": 3,
+    "imagem": "/images/produto6.jpg"
+  },
+  {
+    "id": 7,
+    "nome": "Saia Mullet Midi",
+    "preco": 108.89,
+    "nota": 5,
+    "imagem": "/images/produto7.jpg"
+  },
+  {
+    "id": 8,
+    "nome": "Calça Transpassada Black Visco",
+    "preco": 104.09,
+    "nota": 5,
+    "imagem": "/images/produto8.jpg"
+  }
+]

@@ -1,0 +1,31 @@
+.vantagens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+}
+.vantagens * {
+  color: var(--white);
+  text-align: center;
+  text-transform: uppercase;
+}
+.vantagens:not(strong) {
+  font-weight: 300;
+}
+.vantagens > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.vantagens img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 489px) {
+  .vantagens > div {
+    justify-content: center;
+  }
+}

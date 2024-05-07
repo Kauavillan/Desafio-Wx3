@@ -1,0 +1,101 @@
+#blocos {
+  background-color: var(--black);
+}
+
+#blocos * {
+  color: var(--white);
+}
+
+#blocos #principal,
+#secundarios > div {
+  background-color: var(--gray);
+}
+
+#blocos #secundarios {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#blocos .bloco {
+  background: rgb(27, 27, 27);
+  background: linear-gradient(
+    55deg,
+    rgba(27, 27, 27, 1) 6%,
+    rgba(90, 90, 90, 1) 29%
+  );
+  display: flex;
+  align-items: flex-end;
+}
+.bloco div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin: 0 0 30px 30px;
+}
+#blocos .bloco h2 {
+  font-family: Authentic;
+  font-size: 8.5em;
+  font-weight: 300;
+}
+.bloco p {
+  font-size: 1.1em;
+  font-weight: 300;
+}
+.bloco button {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-top: 10px;
+  font-family: Poppins, sans-serif;
+  padding: 3px 35px;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 1px solid var(--light-gray);
+  cursor: pointer;
+  transition: border 0.2s ease-in-out;
+}
+.bloco button:hover {
+  border: 1px solid var(--white);
+}
+@media screen and (min-width: 1001px) {
+  #blocos .container {
+    padding: 25px 0;
+    height: 95vh;
+    min-height: 885px;
+    display: flex;
+    justify-content: center;
+  }
+  #blocos #secundarios .bloco {
+    height: 48%;
+  }
+  #blocos .container > div {
+    width: 50%;
+  }
+  #blocos #principal {
+    height: 100%;
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #blocos .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #blocos > div {
+    margin-bottom: 20px;
+  }
+  #blocos #principal,
+  #blocos #secundarios > div {
+    margin: 10px 0;
+    width: 100%;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #blocos .bloco h2 {
+    font-size: 5em;
+  }
+}

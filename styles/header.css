@@ -1,0 +1,121 @@
+header #logo:hover {
+  color: var(--gray);
+}
+header nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-weight: 500;
+}
+header nav #links {
+  width: 80%;
+}
+header h2 {
+  font-size: 2em;
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header li {
+  list-style: none;
+  margin-left: 1vw;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--black);
+  position: relative;
+}
+header a:not(#logo):hover:not(:has(i))::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: var(--gray);
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  z-index: 5;
+}
+
+#menu-mobile {
+  display: none;
+  font-size: 1.3em;
+}
+#menu-mobile i {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+#sidebar {
+  background-color: var(--white);
+  transform: translateX(60vw);
+  transition: transform 0.3s ease-in-out;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60vw;
+  height: 100vh;
+  padding-top: 25px;
+  overflow-y: scroll;
+}
+#sidebar.active {
+  transform: translateX(0);
+}
+
+#sidebar ul,
+#sidebar nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#sidebar > div:first-child {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5em;
+  i {
+    margin: 10px 15px;
+  }
+}
+
+#sidebar li {
+  margin-bottom: 1vh;
+}
+.user {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  i {
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  header #desktop-nav {
+    display: none;
+  }
+  header #menu-mobile,
+  header #menu-mobile i {
+    display: block;
+  }
+  header .user {
+    flex-direction: column;
+    align-items: center;
+  }
+  header * {
+    margin-left: 0;
+  }
+}

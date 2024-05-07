@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kauã Villa Nova teste Wx3</title>
+
+    <!-- Estilos -->
+    <!-- Fonte poppins importada pelo google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/slider.css" />
+    <link rel="stylesheet" href="styles/products.css" />
+    <link rel="stylesheet" href="styles/vantagens.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/blocos.css" />
+    <link rel="stylesheet" href="styles/banner.css" />
+    <link rel="stylesheet" href="styles/depoimentos.css" />
+    <link rel="stylesheet" href="styles/contato.css" />
+    <link rel="stylesheet" href="styles/links-footer.css" />
+    <link rel="stylesheet" href="styles/formulario.css" />
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/slider.js" defer></script>
+    <script type="module" src="scripts/generateProductsPage.js" defer></script>
+    <script type="module" src="scripts/home.js" defer></script>
+    <script type="module" src="scripts/products-slider.js" defer></script>
+    <script src="scripts/gerenciarDepoimentos.js" defer></script>
+    <!-- Imports -->
+
+    <!-- Font awesome para usar svg's similares -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" id="logo"><h2>LOGO</h2></a>
+      <nav id="desktop-nav">
+        <ul id="links">
+          <li><a href="#">NEWS</a></li>
+          <li><a href="#">CINTAS</a></li>
+          <li><a href="#">CALCINHAS</a></li>
+          <li><a href="#">PIJAMAS</a></li>
+          <li><a href="#">CAMISOLAS</a></li>
+          <li><a href="#">GESTANTE</a></li>
+          <li><a href="#">SEXY</a></li>
+          <li><a href="#">SUTIÃS</a></li>
+          <li><a href="#">COLEÇÕES</a></li>
+          <li><a href="#">OUTLET</a></li>
+        </ul>
+        <ul id="acoes">
+          <li><i class="fa-solid fa-magnifying-glass"></i></li>
+          <li><i class="fa-regular fa-heart"></i></li>
+          <li class="user">
+            <i class="fa-regular fa-user"></i>
+            <div>
+              <a href="#">Login</a> |
+              <a href="#">cadastrar</a>
+            </div>
+          </li>
+          <li>
+            <a href="carrinho.html"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="menu-mobile">
+        <i class="fa-solid fa-bars" id="show-menu"></i>
+
+        <div id="sidebar">
+          <div>
+            <i class="fa-solid fa-xmark" id="hide-menu"></i>
+          </div>
+          <nav id="mobile-nav">
+            <ul id="links-mobile">
+              <li><a href="#">NEWS</a></li>
+              <li><a href="#">CINTAS</a></li>
+              <li><a href="#">CALCINHAS</a></li>
+              <li><a href="#">PIJAMAS</a></li>
+              <li><a href="#">CAMISOLAS</a></li>
+              <li><a href="#">GESTANTE</a></li>
+              <li><a href="#">SEXY</a></li>
+              <li><a href="#">SUTIÃS</a></li>
+              <li><a href="#">COLEÇÕES</a></li>
+              <li><a href="#">OUTLET</a></li>
+            </ul>
+            <ul id="acoes-mobile">
+              <li><i class="fa-solid fa-magnifying-glass"></i></li>
+              <li><i class="fa-regular fa-heart"></i></li>
+              <li class="user">
+                <i class="fa-regular fa-user"></i>
+                <div>
+                  <a href="#">Login</a> |
+                  <a href="#">cadastrar</a>
+                </div>
+              </li>
+              <li>
+                <a href="carrinho.html"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+
+          <div class="slide">
+            <img src="images/paisagem1.jpg" alt="imagem slider 1" />
+          </div>
+          <div class="slide">
+            <img src="images/paisagem2.jpg" alt="imagem slider 2" />
+          </div>
+          <div class="slide">
+            <img src="images/paisagem3.jpg" alt="imagem slider 3" />
+          </div>
+          <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"><span></span></label>
+            <label for="radio2" class="manual-btn"><span></span></label>
+            <label for="radio3" class="manual-btn"><span></span></label>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <h3>Lançamentos</h3>
+        <div id="lancamentos-paginacao" class="paginacao"></div>
+        <div id="lancamentos" class="list-products"></div>
+        <a href="#" class="ver-todos">Ver todos</a>
+      </section>
+
+      <section class="vantagens">
+        <div class="container">
+          <div>
+            <img src="images/caixa.svg" alt="Ícone de uma caixa" />
+            <div>
+              <p>
+                <strong>FRETE GRÁTIS</strong> A PARTIR DE <br />
+                R$ 199 (SUDESTE) E R$ 299 (BRASIL)
+              </p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="images/cod_barras.svg"
+              alt="Ícone de um código de barras"
+            />
+            <div>
+              <p>
+                <strong>10% de desconto</strong> no <br />
+                boleto bancário / depósito
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="images/cartao.svg" alt="Ícone de um cartão" />
+            <div>
+              <p>
+                <strong>Até 10x sem juros</strong> <br />
+                nos cartões de crédito
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <img src="images/cartoes.svg" alt="Ícone com dois cartões" />
+            <div>
+              <p>
+                Pagamento com até <br />
+                <strong>2 cartões</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <h3>Destaques</h3>
+        <div id="destaques-paginacao" class="paginacao"></div>
+        <div id="destaques" class="list-products"></div>
+        <a href="#" class="ver-todos">Ver todos</a>
+      </section>
+
+      <section id="blocos">
+        <div class="container">
+          <div id="principal" class="bloco">
+            <div>
+              <h2>Camisolas</h2>
+              <p>Para quem<br />quer relaxar</p>
+              <button>Veja mais</button>
+            </div>
+          </div>
+          <div id="secundarios">
+            <div class="bloco">
+              <div>
+                <h2>Linha noite</h2>
+                <p>Para quem ama<br />praticidade</p>
+                <button>Veja mais</button>
+              </div>
+            </div>
+            <div class="bloco">
+              <div>
+                <h2>Sutiãs</h2>
+                <p>Para quem<br />ama conforto</p>
+                <button>Veja mais</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <h3>Outlet</h3>
+        <div id="outlet-paginacao" class="paginacao"></div>
+        <div id="outlet" class="list-products"></div>
+        <a href="#" class="ver-todos">Ver todos</a>
+      </section>
+
+      <section id="banner" class="container">
+        <div>
+          <p>Banner</p>
+        </div>
+      </section>
+
+      <section id="depoimentos">
+        <div class="container">
+          <h3>Depoimentos</h3>
+          <h4>O que os nossos clientes estão dizendo</h4>
+          <div id="depoimentos-list"></div>
+          <div id="depoimentos-paginacao"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section id="form">
+        <div class="container">
+          <div>LOGO</div>
+          <div>
+            <p>
+              Cadastre o seu e-mail e<strong>
+                ganhe<br />10% de desconto</strong
+              >
+              na sua primeira compra
+            </p>
+          </div>
+          <div>
+            <form onsubmit="(event)=>event.preventDefault()">
+              <input type="text" placeholder="NOME" />
+              <input type="email" placeholder="E-MAIL" />
+              <input type="submit" value="CADASTRAR" />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato">
+        <div class="container">
+          <div id="wpp">
+            <div></div>
+            <div>
+              <h5>Alguma dúvida?</h5>
+              <p>Entre em contato pelo nosso</p>
+              <strong
+                ><span>whatsapp </span
+                ><a href="tel:22998989898">(22) 99898-9898</a></strong
+              >
+            </div>
+          </div>
+          <div id="social-media">
+            <div><i class="fa-brands fa-facebook-f"></i></div>
+            <div><i class="fa-brands fa-instagram"></i></div>
+            <div><i class="fa-brands fa-youtube"></i></div>
+          </div>
+        </div>
+      </section>
+      <section id="footer-links" class="container">
+        <div>
+          <h5>Institucional</h5>
+          <div>
+            <ul>
+              <li><a href="#">Quem somos</a></li>
+              <li><a href="#">Loja Física</a></li>
+              <li><a href="#">Central de ajuda</a></li>
+              <li><a href="#">Contato</a></li>
+              <li><a href="#">PROCON-RJ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h5>Contato</h5>
+          <div>
+            <ul>
+              <li>Segunda a sexta De 7 às 17h</li>
+              <li><a href="tel:2225222222">(22) 2522-2222</a></li>
+              <li><a href="tel:22999999999">(22) 99999-9999</a></li>
+              <li>
+                <a href="mailto:contato@teste.com.br">contato@teste.com.br</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h5>Formas de pagamento</h5>
+          <div>
+            <img
+              id="pagamento"
+              src="images/footer_formas-pgto.png"
+              alt="Formas de pagamento"
+            />
+          </div>
+        </div>
+        <div>
+          <h5>Forma de entrega</h5>
+          <div>
+            <img
+              id="correios"
+              src="images/footer_correios.png"
+              alt="Correios"
+            />
+          </div>
+        </div>
+        <div>
+          <h5>Segurança e qualidade</h5>
+          <div>
+            <img id="ebit" src="images/e-bit.png" alt="Certificado e-bit" />
+            <img
+              id="ssl"
+              src="images/footer-ssl.jpg"
+              alt="Garantia de segurança ssl"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="final">
+        <div class="container">
+          <hr />
+          <div>
+            <p>
+              LOREM IPSUM COMERCIO DE VESTUÁRIO LTDA. | CNPJ: 01.111.000/0001-01
+              / RUA DAS COVES, 100, CENTRO, NOVA FRIBURGO / RJ - 26.600-000
+            </p>
+            <a href="https://www.wx3.com.br" target="_blank">
+              <img src="images/wx3-logo.png" alt="Logo Wx3" />
+            </a>
+          </div>
+
+          <hr />
+          <div>
+            <p>
+              Preços e condições de pagamento exclusivos para compras via
+              internet. Ofertas válidas até o término de nossos estoques para
+              internet. Vendas sujeitas à análise e confirmação de dados. Em
+              caso de divergência de preços no site, o valor válido é o do
+              Carrinho de Compras.
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

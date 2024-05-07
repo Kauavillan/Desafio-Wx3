@@ -1,0 +1,93 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 77vh;
+}
+main h1 {
+  font-size: 2.5em;
+}
+#produtos-listagem div {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#produtos-listagem .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 180px;
+  overflow: hidden;
+}
+#produtos-listagem .card-body {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+#produtos-listagem img {
+  max-width: 250px;
+}
+#produtos-listagem h5 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+#cart > h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: var(--salmon);
+}
+#produtos-listagem span {
+  font-size: 2em;
+  color: salmon;
+  font-weight: 700;
+}
+#subtotal-container {
+  text-align: center;
+  margin-top: 30px;
+}
+#subtotal-container h2 {
+  font-size: 2.3em;
+}
+#subtotal-container p {
+  background-color: var(--gray);
+  font-size: 2.2em;
+  font-weight: 700;
+  color: var(--white);
+}
+#del-cart {
+  margin-top: 25px;
+  background-color: var(--salmon);
+  font-weight: 600;
+  font-size: 1.5em;
+  padding: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#del-cart:hover {
+  background-color: var(--dark-salmon);
+}
+
+@media screen and (max-width: 500px) {
+  #cart-container {
+    margin-left: 20px;
+  }
+  #produtos-listagem h2 {
+    font-size: 1.7em;
+  }
+  #produtos-listagem span {
+    font-size: 1.6em;
+  }
+  #produtos-listagem img {
+    max-width: 200px;
+  }
+  #produtos-listagem .img-container {
+    max-width: 150px;
+  }
+  #del-cart {
+    font-size: 1.2em;
+  }
+}
