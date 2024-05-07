@@ -25,6 +25,9 @@
 }
 
 @media screen and (max-width: 489px) {
+  .vantagens .container {
+    flex-direction: column;
+  }
   .vantagens > div {
     justify-content: center;
   }
