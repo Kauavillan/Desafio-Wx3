@@ -11,7 +11,7 @@ header nav {
   font-weight: 500;
 }
 header nav #links {
-  width: 80%;
+  width: 75%;
 }
 header h2 {
   font-size: 2em;
@@ -51,6 +51,49 @@ header {
   align-items: center;
   padding: 25px 40px;
   z-index: 5;
+}
+header #acoes li:first-child:hover i,
+header #acoes-mobile li:first-child:hover i {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+header #acoes li:nth-child(2),
+header #acoes-mobile li:nth-child(2) {
+  position: relative;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+header #acoes li:nth-child(2) i,
+header #acoes-mobile li:nth-child(2):hover i {
+  transition: color 0.3s ease-in-out;
+}
+header #acoes li:nth-child(2):hover i,
+header #acoes-mobile li:nth-child(2):hover i {
+  color: var(--salmon);
+}
+header #acoes li:nth-child(2) span,
+header #acoes-mobile li:nth-child(2) span,
+header .cart-qtd {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  font-size: 0.7em;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  top: 15px;
+  left: 8px;
+  color: var(--white);
+  border-radius: 50%;
+  background-color: var(--gray);
+}
+
+header nav #acoes li:last-child a,
+header nav #acoes-mobile li:last-child a {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 #menu-mobile {
@@ -120,5 +163,10 @@ header {
   }
   header * {
     margin-left: 0;
+  }
+  header .cart-qtd,
+  header #acoes-mobile li:nth-child(2) span {
+    top: 15px;
+    left: 15px;
   }
 }

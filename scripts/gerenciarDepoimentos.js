@@ -7,7 +7,7 @@ for (let i = 0; i < 3; i++) {
                 <img src="images/user2.png" alt="Ícone do usuário" />
             </div>
             <div>
-                <p>Carlos A.</p>
+                <p class="user-nome">Carlos A.</p>
                 <p>São José do Rio Preto - SP</p>
                 <div class="stars">
                 <i class="fa-solid fa-star"></i>

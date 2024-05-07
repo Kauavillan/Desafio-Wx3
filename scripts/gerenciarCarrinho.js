@@ -1,3 +1,4 @@
+import { getTotalCarrinho } from "./pegarTotalDoCarrinho.js";
 function getLocalStorage() {
   let carrinho = localStorage.getItem("carrinho");
   if (carrinho) {
@@ -23,7 +24,7 @@ function gerarProdutosCarrinho() {
       </div>
       <div class="card-body">
         <h5 class="card-title">${produto.nome}</h5>
-        <span>R$${produto.preco.toFixed(2)}</span>
+        <span>R$${produto.preco.toFixed(2).replace(".", ",")}</span>
       </div>
     </div>
   `);
@@ -35,7 +36,7 @@ function gerarProdutosCarrinho() {
       </button>`
   );
   let total = carrinho.reduce((acc, produto) => acc + produto.preco, 0);
-  $("#total").html(`R$${total.toFixed(2)}`);
+  $("#total").html(`R$${total.toFixed(2).replace(".", ",")}`);
   console.log(total);
 }
 gerarProdutosCarrinho();
@@ -47,6 +48,7 @@ $("#del-cart").on("click", () => {
     )
   ) {
     localStorage.removeItem("carrinho");
+    getTotalCarrinho();
     gerarProdutosCarrinho();
   }
 });

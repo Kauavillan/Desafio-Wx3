@@ -33,12 +33,14 @@ export function generateProductsList(products, tag = null) {
             <h5>${product.nome}</h5>
             <span>ref.: pcd202</span>
             <div class="preco">
-                <span>R$ ${product.preco.toFixed(2)}</span>
+                <span>R$ ${product.preco.toFixed(2).replace(".", ",")}</span>
                 <span>no boleto</span>
                 <span>em até 10x de R$ ${(
                   (product.preco + product.preco * 1.1) /
                   10
-                ).toFixed(2)}</span>
+                )
+                  .toFixed(2)
+                  .replace(".", ",")}</span>
             </div>
             <button>COMPRE AGORA</button>
         </a>

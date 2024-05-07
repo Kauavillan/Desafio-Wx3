@@ -37,6 +37,7 @@
     <script type="module" src="scripts/products-slider.js" defer></script>
     <script src="scripts/gerenciarDepoimentos.js" defer></script>
     <script src="scripts/handleHeader.js" defer></script>
+    <script type="module" src="scripts/pegarTotalDoCarrinho.js" defer></script>
     <!-- Imports -->
 
     <!-- Font awesome para usar svg's similares -->
@@ -72,7 +73,7 @@
         </ul>
         <ul id="acoes">
           <li><i class="fa-solid fa-magnifying-glass"></i></li>
-          <li><i class="fa-regular fa-heart"></i></li>
+          <li><i class="fa-regular fa-heart"></i><span>2</span></li>
           <li class="user">
             <i class="fa-regular fa-user"></i>
             <div>
@@ -82,8 +83,10 @@
           </li>
           <li>
             <a href="carrinho.html"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
+              ><i class="fa-solid fa-cart-shopping"></i>
+              <span class="cart-qtd"></span>
+              <span class="cart-total"></span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -110,7 +113,7 @@
             </ul>
             <ul id="acoes-mobile">
               <li><i class="fa-solid fa-magnifying-glass"></i></li>
-              <li><i class="fa-regular fa-heart"></i></li>
+              <li><i class="fa-regular fa-heart"></i><span>2</span></li>
               <li class="user">
                 <i class="fa-regular fa-user"></i>
                 <div>
@@ -120,8 +123,10 @@
               </li>
               <li>
                 <a href="carrinho.html"
-                  ><i class="fa-solid fa-cart-shopping"></i
-                ></a>
+                  ><i class="fa-solid fa-cart-shopping"></i>
+                  <span class="cart-qtd"></span>
+                  <span class="cart-total"></span>
+                </a>
               </li>
             </ul>
           </nav>

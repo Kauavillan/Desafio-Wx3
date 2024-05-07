@@ -8,6 +8,9 @@
   font-size: 2em;
   font-weight: 300;
 }
+#depoimentos .user-nome {
+  color: var(--brown);
+}
 #depoimentos h4 {
   font-family: Authentic, sans-serif;
   font-size: 3em;

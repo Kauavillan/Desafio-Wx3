@@ -33,7 +33,7 @@ $("#conteudo").html(
                   .join("")}
                 
             </div>
-            <h2>R$${produto.preco.toFixed(2)}</h2>
+            <h2>R$${produto.preco.toFixed(2).replace(".", ",")}</h2>
             <button id="addCarrinho" value="${
               produto.id
             }">Adicionar ao carrinho <i class="fa-solid fa-cart-shopping"></i></button>

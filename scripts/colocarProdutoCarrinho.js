@@ -1,4 +1,5 @@
 import { getProducts } from "./getProducts.js";
+import { getTotalCarrinho } from "./pegarTotalDoCarrinho.js";
 
 const produtos = await getProducts();
 
@@ -20,6 +21,7 @@ if (produtos[produtoId] !== undefined) {
     } else {
       carrinho.push({ ...produtos[produtoId - 1] });
       localStorage.setItem("carrinho", JSON.stringify(carrinho));
+      getTotalCarrinho();
       alert("Produto adicionado ao carrinho!");
     }
   });
